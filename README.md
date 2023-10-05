@@ -12,7 +12,7 @@ This repo has been tested on Python3
 Assuming you have python installed, open terminal and run these commands:
 
 ```bash
-git clone https://github.com/msieg/deep-music-visualizer.git
+git clone https://github.com/bellacaprino/deep-music-visualizer.git
 cd deep-music-visualizer
 pip install -r requirements.txt
 ```

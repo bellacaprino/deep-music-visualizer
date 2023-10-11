@@ -381,7 +381,8 @@ for i in tqdm(range(frame_lim)):
 
     #convert to image array and add to frames
     for out in output_cpu:    
-        im=np.array(Image.fromarray(out))
+        im = Image.fromarray((out * 255).astype(np.uint8))
+        im = im.resize((512, 512))
         frames.append(im)
         
     #empty cuda cache
